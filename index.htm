@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="np.css">
     <title>Document</title>
 </head>
-<body class="container">
+<body class="container check">
+
     <div class="check__tottal">
         <h3 class="check__tottal-h3">Разом:</h3>
         <p class="check__tottal-p">20 товарів на суму <span class="check__tottal-p-span">53087,10 грн</span></p>
@@ -26,113 +27,131 @@
             <button type="button" class="check__tottal-btn">підтвердити замовлення</button>   
         </div>
     </div>
+
+    
     <div class="check__form">
         <h3 class="check_form-h3">Ваші контактні дані</h3>
         <div class="check_form-btn-wrap">
-            <button class="check_form-btn-activ" type="button">Я новий покупець</button>
-            <button class="check_form-btn-trans" type="button">Я постійний клієнт</button>
+            <button class="check_form-btn-wrap-fst check_form-btn-activ" type="button">Я новий покупець</button>
+            <button class="check_form-btn-wrap-ts check_form-btn-trans" type="button">Я постійний клієнт</button>
         </div>
-            <form class="check__forma">            
-            <label class="check__forma-label">
+           <!--<form class="check__forma">  -->          
+            <label class="check__forma-label  check__thakond-name">
                 Прізвище
               <input class="check__forma-input" type="input" name="color"  />
             </label>
-            <label class="check__forma-label">
+            <label class="check__forma-label check__first-name">
                 Ім'я
               <input class="check__forma-input" type="input" name="color"  />
             </label>
-            <label class="check__forma-label">
+            <label class="check__forma-label check__father-name">
                 По батькові
               <input class="check__forma-input" type="input" name="color"  />
             </label>
-            <label class="check__forma-label">
+            <label class="check__forma-label check__phone-number">
                 Мобільний телефон
               <input class="check__forma-input" type="input" name="color" value="+38" />
             </label>
-            <label class="check__forma-label">
+            <label class="check__forma-label  check__phone-mail">
                 Електронна пошта
               <input class="check__forma-input" type="input" name="color" />
             </label>
-            <div  class="check__forma-label-div">
-              <img  class="check__forma-svg" src="/1.svg">
+            <div class="check__forma-label-div  check__pay">
               <p class="check__forma-title">Оплата</p>
-              <ul class="check__forma-select">
-                <li class="check__forma-option"><p>-Виберіть значення-</p></li>
-                <li class="check__forma-option"><p>Самовивіз</p></li>
-                <li class="check__forma-option"><p>Доставка ПанСтакан</p></li>
-                <li class="check__forma-option"><p>Делівері</p></li>
-                <li class="check__forma-option"><p>Укрпошта</p></li>
-             </ul>
-             
+              <div class="select__header">
+                <span class="check__forma__current">-Виберіть значення-</span>
+                <img  class="check__forma-svg" src="/1.svg">      
+              </div>  
+              <div class="check__forma-select">
+                <div class="check__forma-option"><p>Київ</p></div>
+                <div class="check__forma-option"><p>Київ</p></div>
+                <div class="check__forma-option"><p>Київ</p></div>
+                <div class="check__forma-option"><p>Київ</p></div>
+                <div class="check__forma-option"><p>Київ</p></div>
+              </div>
+            </div>
+         <div class="check__forma-label-div  check__phone-delive">
+          <p class="check__forma-title">Доставка</p>
+          <div class="select__header">
+            <span class="check__forma__current">-Виберіть значення-</span>
+            <img  class="check__forma-svg" src="/1.svg">      
+          </div>  
+          <div class="check__forma-select">
+            <div class="check__forma-option"><p>Київ</p></div>
+            <div class="check__forma-option"><p>Київ</p></div>
+            <div class="check__forma-option"><p>Київ</p></div>
+            <div class="check__forma-option"><p>Київ</p></div>
+            <div class="check__forma-option"><p>Київ</p></div>
           </div>
-          <div  class="check__forma-label-div">
-            <img  class="check__forma-svg" src="/1.svg">
-            <p class="check__forma-title">Доставка</p>
-            <ul class="check__forma-select">
-              <li class="check__forma-option"><p>-Виберіть значення-</p></li>
-              <li class="check__forma-option"><p>Самовивіз</p></li>
-              <li class="check__forma-option"><p>Доставка ПанСтакан</p></li>
-              <li class="check__forma-option"><p>Делівері</p></li>
-              <li class="check__forma-option"><p>Укрпошта</p></li>
-           </ul>
-           
         </div>
-        <label class="check__agree-label">                
+        <label class="check__agree-label  check__agree">                
           <input class="check__agree-checkbox" type="checkbox" name="color" value="call" />
           <span class="check__agree-span"></span>
           Доставка за адресою            
-        </label>
-        <div  class="check__forma-label-div">
-          <img  class="check__forma-svg" src="/1.svg">
-          <p class="check__forma-title">Mісто</p>
-          <ul class="check__forma-select">
-            <li class="check__forma-option"><p>Київ</p></li>
-            <li class="check__forma-option"><p>Самовивіз</p></li>
-            <li class="check__forma-option"><p>Доставка ПанСтакан</p></li>
-            <li class="check__forma-option"><p>Делівері</p></li>
-            <li class="check__forma-option"><p>Київ</p></li>
-         </ul>
-         
+        </label>       
+        <div class="check__forma-label-div  check__city">
+          <p class="check__forma-title check__lable-p">Місто</p>
+          <div class="select__header">
+            <span class="check__forma__current">-Виберіть значення-</span>
+            <img  class="check__forma-svg" src="/1.svg">      
+          </div>  
+          <div class="check__forma-select">
+            <div class="check__forma-option"><p>Київ</p></div>
+            <div class="check__forma-option"><p>Київ</p></div>
+            <div class="check__forma-option"><p>Київ</p></div>
+            <div class="check__forma-option"><p>Київ</p></div>
+            <div class="check__forma-option"><p>Київ</p></div>
+          </div>
+        </div>
+      <div class="check__forma-label-div  check__vilage">   
+   
+        <p class="check__forma-title check__lable-p">Вулиця</p>
+        <div class="select__header">
+          <span class="check__forma__current">-Виберіть значення-</span>
+          <img  class="check__forma-svg" src="/1.svg">      
+        </div>  
+        <div class="check__forma-select">
+          <div class="check__forma-option"><p>Київ</p></div>
+          <div class="check__forma-option"><p>Київ</p></div>
+          <div class="check__forma-option"><p>Київ</p></div>
+          <div class="check__forma-option"><p>Київ</p></div>
+          <div class="check__forma-option"><p>Київ</p></div>
+        </div>
       </div>
-      <div  class="check__forma-label-div">
-        <img  class="check__forma-svg" src="/1.svg">
-        <p class="check__forma-title">Вулиця</p>
-        <ul class="check__forma-select">
-          <li class="check__forma-option"><p>Київ</p></li>
-          <li class="check__forma-option"><p>Самовивіз</p></li>
-          <li class="check__forma-option"><p>Доставка ПанСтакан</p></li>
-          <li class="check__forma-option"><p>Делівері</p></li>
-          <li class="check__forma-option"><p>Київ</p></li>
-       </ul>
-       
+   
+  <div class="check__forma-label-div  check__area">
+    <p class="check__forma-title check__lable-p">Область</p>
+    <div class="select__header">
+      <span class="check__forma__current">-Виберіть значення-</span>
+      <img  class="check__forma-svg" src="/1.svg">      
+    </div>  
+    <div class="check__forma-select">
+      <div class="check__forma-option"><p>Київ</p></div>
+      <div class="check__forma-option"><p>Київ</p></div>
+      <div class="check__forma-option"><p>Київ</p></div>
+      <div class="check__forma-option"><p>Київ</p></div>
+      <div class="check__forma-option"><p>Київ</p></div>
     </div>
-    <div  class="check__forma-label-div">
-      <img  class="check__forma-svg" src="/1.svg">
-      <p class="check__forma-title">Область</p>
-      <ul class="check__forma-select">
-        <li class="check__forma-option"><p>Київ</p></li>
-        <li class="check__forma-option"><p>Самовивіз</p></li>
-        <li class="check__forma-option"><p>Доставка ПанСтакан</p></li>
-        <li class="check__forma-option"><p>Делівері</p></li>
-        <li class="check__forma-option"><p>Київ</p></li>
-     </ul>
-     
   </div>
-            <div class="check__forma-wrap-hous">
-                <label class="check__forma-label">
-                    Будинок
-                <input class="check__forma-input" type="input" name="color"  />
-                </label>
-                <label class="check__forma-label">
-                    Квартира
-                <input class="check__forma-input" type="input" name="color" />
-                </label>
-                </div>
-            <label class="check__forma-label">
-                Коментар
-              <textarea class="check__forma-textarea" type="text" name="color"  ></textarea>
-            </label>
-        </form>
+  
+  <div class="check__forma-wrap-hous chack-wraphous">
+    <label class="check__forma-label">
+      <p class='check__lable-p'>Будинок</p>
+    <input class="check__forma-input" type="input" name="number"  />
+    </label>
+    <label class="check__forma-label">
+      <p class='check__lable-p'>Квартира</p>
+    <input class="check__forma-input" type="input" name="appartment" />
+      </label>
     </div>
+
+    <label class="check__forma-label check-comments ">
+      <p class="check__lable-p">Коментар</p>
+      <textarea class="check__forma-textarea" type="text" name="coments"  ></textarea>
+    </label>
+        
+    </div>
+    <script src="./npa.js"></script>
 </body>
+
 </html>
